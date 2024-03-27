@@ -38,7 +38,7 @@
 
 .menu__item:last-of-type {
     /* поговорить про обнуление */
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .cover {
@@ -74,9 +74,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    /* margin-top: -300px;
-    margin-left: -300px; */
     transform: translate(-50%, -50%);
+    
 }
 
 .main-text__paragraph {
@@ -105,7 +104,8 @@
     /* поставим карточки в линию с переносом */
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
-    gap: 40px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
 }
 
 .card {
@@ -113,6 +113,7 @@
     box-shadow: 0 0 5px grey;
     box-sizing: border-box;
     padding: 20px;
+    width: 300px;
     position: relative;
 }
 
@@ -132,6 +133,7 @@
 }
 
 /* внимание на модификаторы */
+
 .card__heading-marker_type_truth {
     background-color: green;
 }
@@ -146,14 +148,14 @@
 }
 
 
-
 .photo-grid {
     /* сверстаем сетку картинок (600 в высоту, 20 - промежуток) */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
     min-height: 600px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 .photo-grid__item {
@@ -187,6 +189,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+
 }
 
 .footer {
